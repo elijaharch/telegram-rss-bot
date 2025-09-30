@@ -58,6 +58,3 @@ Install all dependencies using `pip install -r requirements.txt.`
 - Add your Telegram bot token to the .env file.
 - Configure RSS feeds and Telegram channels in the script.
 - Run the bot to start monitoring and posting updates.
-
-## Contributing
-Contributions are welcome! Fork the repository, create a branch, and submit a pull request with your improvements.
