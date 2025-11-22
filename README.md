@@ -90,13 +90,6 @@ Once running, the bot will:
 3. Automatically post new articles to the appropriate channels
 4. Log all activities to `bot.log`
 
-## 🏗️ Project Structure
-telegram-rss-bot/
-├── bot.py              # Main bot script
-├── requirements.txt    # Python dependencies
-├── .env               # Environment variables (not in git)
-├── .env.example       # Example environment file
-└── bot.log           # Log file (generated)
 ## 🐛 Troubleshooting
 
 ### Bot doesn't post articles
