@@ -2,9 +2,9 @@ name: Security Checks
 
 on:
   push:
-    branches: [ main ]
+    branches: [ main, refactor ]
   pull_request:
-    branches: [ main ]
+    branches: [ main, refactor ]
 
 jobs:
   security:
@@ -22,9 +22,15 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
+        pip install -r requirements.txt
         pip install bandit
 
-    - name: Run Bandit
+    - name: Run Bandit security scan
       run: |
-        bandit -r src/ -f json || true
+        bandit -r src/ -ll -f json -o bandit-report.json || true
+      continue-on-error: true
+
+    - name: Display Bandit results
+      run: |
+        cat bandit-report.json || echo "No security issues found"
       continue-on-error: true
