@@ -30,7 +30,7 @@ A Python bot that monitors RSS feeds and automatically posts new articles to con
 
 1. **Clone the repository**
 ```bash
-   git clone https://github.com/yourusername/telegram-rss-bot.git
+   git clone https://github.com/elijaharch/telegram-rss-bot.git
    cd telegram-rss-bot
 ```
 
