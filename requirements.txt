@@ -7,18 +7,15 @@ requests==2.31.0
 urllib3==2.0.7
 backoff==2.2.1
 
-# Testing dependencies
 pytest==7.4.3
 pytest-cov==4.1.0
 pytest-mock==3.12.0
 
-# Code quality tools
 black==23.12.1
 flake8==6.1.0
 isort==5.13.2
 pylint==3.0.3
 mypy==1.8.0
 
-# Security tools
 bandit==1.7.6
-safety==2.3.5
+safety==3.2.11
