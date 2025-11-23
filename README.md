@@ -53,7 +53,7 @@ A Python bot that monitors RSS feeds and automatically posts new articles to con
 
 5. **Run the bot**
 ```bash
-   python bot.py
+   python main.py
 ```
 
 ## ⚙️ Configuration
